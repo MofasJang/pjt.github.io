@@ -5,13 +5,19 @@
     <url>/posts/daily/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
+            <h3 id="和魔鬼共舞时，"><a href="#和魔鬼共舞时，" class="headerlink" title="和魔鬼共舞时，"></a>和魔鬼共舞时，</h3><h3 id="只能等着音乐结束。"><a href="#只能等着音乐结束。" class="headerlink" title="只能等着音乐结束。"></a>只能等着音乐结束。</h3><h3 id="————盖·里奇"><a href="#————盖·里奇" class="headerlink" title="————盖·里奇"></a>————盖·里奇</h3>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>2020.10.8</p>
+<a id="more"></a>
+
+
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
             <h3 id="你了解星空下万物温馨的生长吗，"><a href="#你了解星空下万物温馨的生长吗，" class="headerlink" title="你了解星空下万物温馨的生长吗，"></a>你了解星空下万物温馨的生长吗，</h3><h3 id="你了解我们的存在吗，"><a href="#你了解我们的存在吗，" class="headerlink" title="你了解我们的存在吗，"></a>你了解我们的存在吗，</h3><h3 id="你已经遗失开启王国的钥匙了吗，"><a href="#你已经遗失开启王国的钥匙了吗，" class="headerlink" title="你已经遗失开启王国的钥匙了吗，"></a>你已经遗失开启王国的钥匙了吗，</h3><h3 id="你在轮回中反复降生一直活着吗，"><a href="#你在轮回中反复降生一直活着吗，" class="headerlink" title="你在轮回中反复降生一直活着吗，"></a>你在轮回中反复降生一直活着吗，</h3><h3 id="让我们彻底改造诸神，"><a href="#让我们彻底改造诸神，" class="headerlink" title="让我们彻底改造诸神，"></a>让我们彻底改造诸神，</h3><h3 id="包括各个时代的神话。"><a href="#包括各个时代的神话。" class="headerlink" title="包括各个时代的神话。"></a>包括各个时代的神话。</h3><h3 id="————吉姆·莫里森"><a href="#————吉姆·莫里森" class="headerlink" title="————吉姆·莫里森"></a>————吉姆·莫里森</h3>
             <i class="fa fa-quote-right"></i>
           </blockquote>
 <p>2020.10.7</p>
-<a id="more"></a>
-
-
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <h3 id="声音在太空中消逝，"><a href="#声音在太空中消逝，" class="headerlink" title="声音在太空中消逝，"></a>声音在太空中消逝，</h3><h3 id="霞光变得昏暗。"><a href="#霞光变得昏暗。" class="headerlink" title="霞光变得昏暗。"></a>霞光变得昏暗。</h3><h3 id="永远沉默的世界里，"><a href="#永远沉默的世界里，" class="headerlink" title="永远沉默的世界里，"></a>永远沉默的世界里，</h3><h3 id="只有你和我交谈。"><a href="#只有你和我交谈。" class="headerlink" title="只有你和我交谈。"></a>只有你和我交谈。</h3><h3 id="————阿赫马托娃"><a href="#————阿赫马托娃" class="headerlink" title="————阿赫马托娃"></a>————阿赫马托娃</h3>
@@ -1111,7 +1117,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-OhSGnsQG" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-uhKvltSw" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1205,7 +1211,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-OhSGnsQG"),
+            element: document.getElementById("aplayer-uhKvltSw"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
