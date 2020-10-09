@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://blog.panjiangtao.cn/posts/daily/</loc>
-    <lastmod>2020-10-08</lastmod>
+    <lastmod>2020-10-09</lastmod>
   </url>
   <url>
     <loc>http://blog.panjiangtao.cn/posts/go-17bingfa/</loc>
@@ -53,6 +53,10 @@
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
+    <loc>http://blog.panjiangtao.cn/posts/jizu/</loc>
+    <lastmod>2020-09-24</lastmod>
+  </url>
+  <url>
     <loc>http://blog.panjiangtao.cn/posts/bianyi/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
@@ -62,10 +66,6 @@
   </url>
   <url>
     <loc>http://blog.panjiangtao.cn/posts/ruanti/</loc>
-    <lastmod>2020-09-24</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.panjiangtao.cn/posts/jizu/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
