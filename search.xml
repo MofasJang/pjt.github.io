@@ -5,13 +5,19 @@
     <url>/posts/daily/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
+            <h3 id="我的作品就是我的肉体和灵魂，"><a href="#我的作品就是我的肉体和灵魂，" class="headerlink" title="我的作品就是我的肉体和灵魂，"></a>我的作品就是我的肉体和灵魂，</h3><h3 id="为了它我甘愿冒失去生命和理智的危险。"><a href="#为了它我甘愿冒失去生命和理智的危险。" class="headerlink" title="为了它我甘愿冒失去生命和理智的危险。"></a>为了它我甘愿冒失去生命和理智的危险。</h3><h3 id="————文森特·威廉·梵·高"><a href="#————文森特·威廉·梵·高" class="headerlink" title="————文森特·威廉·梵·高"></a>————文森特·威廉·梵·高</h3>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>2020.10.11</p>
+<a id="more"></a>
+
+
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
             <h3 id="抱歉，似乎是最难以启齿的话。"><a href="#抱歉，似乎是最难以启齿的话。" class="headerlink" title="抱歉，似乎是最难以启齿的话。"></a>抱歉，似乎是最难以启齿的话。</h3><h3 id="————雷·查尔斯"><a href="#————雷·查尔斯" class="headerlink" title="————雷·查尔斯"></a>————雷·查尔斯</h3>
             <i class="fa fa-quote-right"></i>
           </blockquote>
 <p>2020.10.10</p>
-<a id="more"></a>
-
-
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <h3 id="历史学的目标并不是由过去视角出发展望未来。"><a href="#历史学的目标并不是由过去视角出发展望未来。" class="headerlink" title="历史学的目标并不是由过去视角出发展望未来。"></a>历史学的目标并不是由过去视角出发展望未来。</h3><h3 id="————埃里克·霍布斯鲍姆"><a href="#————埃里克·霍布斯鲍姆" class="headerlink" title="————埃里克·霍布斯鲍姆"></a>————埃里克·霍布斯鲍姆</h3>
@@ -1129,7 +1135,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-QgEzJjra" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-RIbhsOMR" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1223,7 +1229,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-QgEzJjra"),
+            element: document.getElementById("aplayer-RIbhsOMR"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
