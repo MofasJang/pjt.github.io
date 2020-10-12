@@ -5,13 +5,19 @@
     <url>/posts/daily/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
+            <h3 id="风乍起。"><a href="#风乍起。" class="headerlink" title="风乍起。"></a>风乍起。</h3><h3 id="合当奋意向人生。"><a href="#合当奋意向人生。" class="headerlink" title="合当奋意向人生。"></a>合当奋意向人生。</h3><h3 id="————堀辰雄"><a href="#————堀辰雄" class="headerlink" title="————堀辰雄"></a>————堀辰雄</h3>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>2020.10.12</p>
+<a id="more"></a>
+
+
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
             <h3 id="我的作品就是我的肉体和灵魂，"><a href="#我的作品就是我的肉体和灵魂，" class="headerlink" title="我的作品就是我的肉体和灵魂，"></a>我的作品就是我的肉体和灵魂，</h3><h3 id="为了它我甘愿冒失去生命和理智的危险。"><a href="#为了它我甘愿冒失去生命和理智的危险。" class="headerlink" title="为了它我甘愿冒失去生命和理智的危险。"></a>为了它我甘愿冒失去生命和理智的危险。</h3><h3 id="————文森特·威廉·梵·高"><a href="#————文森特·威廉·梵·高" class="headerlink" title="————文森特·威廉·梵·高"></a>————文森特·威廉·梵·高</h3>
             <i class="fa fa-quote-right"></i>
           </blockquote>
 <p>2020.10.11</p>
-<a id="more"></a>
-
-
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <h3 id="抱歉，似乎是最难以启齿的话。"><a href="#抱歉，似乎是最难以启齿的话。" class="headerlink" title="抱歉，似乎是最难以启齿的话。"></a>抱歉，似乎是最难以启齿的话。</h3><h3 id="————雷·查尔斯"><a href="#————雷·查尔斯" class="headerlink" title="————雷·查尔斯"></a>————雷·查尔斯</h3>
@@ -177,6 +183,27 @@
         <tag>daily</tag>
         <tag>video</tag>
         <tag>wife</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>起风了</title>
+    <url>/posts/suibi1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h3 id="风乍起。"><a href="#风乍起。" class="headerlink" title="风乍起。"></a>风乍起。</h3><h3 id="合当奋意向人生。"><a href="#合当奋意向人生。" class="headerlink" title="合当奋意向人生。"></a>合当奋意向人生。</h3><h3 id="————堀辰雄《起风了》"><a href="#————堀辰雄《起风了》" class="headerlink" title="————堀辰雄《起风了》"></a>————堀辰雄《起风了》</h3>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<a id="more"></a>
+<h1 id="与病人相恋"><a href="#与病人相恋" class="headerlink" title="与病人相恋"></a>与病人相恋</h1><p>　　这究竟是怎样的一种情感，能让你明知道对方时日无多，却仍满怀期待地陪她在疗养院中度过她最后的时光。<br>　　那女子是这样的柔弱，又是如此温柔，让所有与她接触过的人都不禁想要轻抚她的额头。就如同冬日的雪地里长出的一朵稚嫩小野花，她的出现给人带来美好稍纵即逝的绝望，却又让人在她生命的最后一刻忍不住想用双手包裹，直至凋零。</p>
+<blockquote>
+<p>那是些欢愉的日子，欢愉得令人黯然神伤。<br>就如同早在我俩初次相遇两年之前的那个夏日里我于漫不经意间脱口而出、从此以后便喜欢上了它<br>、无缘无故地常要浅吟低诵的“风乍起。合当奋意向人生。”那行诗句一般，分明忘怀已久，却又悄然苏生————可谓是早于人生之先、远比人生本身更为鲜活的日子。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -704,10 +731,11 @@
 <li>逻辑运算符(与C语言相同，不加赘述)</li>
 <li>位运算符(与C语言相同，不加赘述)</li>
 <li>赋值运算符</li>
-<li>其他运算符<br>接下来让我们来详细看看各个运算符的介绍。<a id="more"></a>
-
-</li>
+<li>其他运算符</li>
 </ul>
+<p>接下来让我们来详细看看各个运算符的介绍。</p>
+<a id="more"></a>
+
 <h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><p>下表列出了所有Go语言的赋值运算符。<br>| 运算符 | 描述                                           | 实例                                  |<br>| :—: | :——————————————-: | :———————————-: |<br>| =      | 简单的赋值运算符，将一个表达式的值赋给一个左值 | C = A + B 将 A + B 表达式结果赋值给 C |<br>| +=     | 相加后再赋值                                   | C += A 等于 C = C + A                 |<br>| -=     | 相减后再赋值                                   | C -= A 等于 C = C - A                 |<br>| *=     | 相乘后再赋值                                   | C *= A 等于 C = C * A                 |<br>| /=     | 相除后再赋值                                   | C /= A 等于 C = C / A                 |<br>| %=     | 求余后再赋值                                   | C %= A 等于 C = C % A                 |<br>| &lt;&lt;=    | 左移后赋值                                     | C &lt;&lt;= 2 等于 C = C &lt;&lt; 2               |<br>| &gt;&gt;=    | 右移后赋值                                     | C &gt;&gt;= 2 等于 C = C &gt;&gt; 2               |<br>| &amp;=     | 按位与后赋值                                   | C &amp;= 2 等于 C = C &amp; 2                 |<br>| ^=     | 按位异或后赋值                                 | C ^= 2 等于 C = C ^ 2                 |<br>| |=    | 按位或后赋值                                   | C |= 2 等于 C = C | 2               |</p>
 <h2 id="其他运算符"><a href="#其他运算符" class="headerlink" title="其他运算符"></a>其他运算符</h2><p>下表列出了Go语言的其他运算符。<br>| 运算符 |       描述       |            实例            |<br>| :—-: | :————–: | :————————: |<br>|   &amp;    | 返回变量存储地址 | &a; 将给出变量的实际地址。 |<br>|   *    |    指针变量。    |     *a; 是一个指针变量     |</p>
 <h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><p>有些运算符拥有较高的优先级，二元运算符的运算方向均是从左至右。下表列出了所有运算符以及它们的优先级，由上至下代表优先级由高到低：</p>
@@ -1183,7 +1211,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-UwoFFIZB" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-TitodzCb" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1277,7 +1305,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-UwoFFIZB"),
+            element: document.getElementById("aplayer-TitodzCb"),
             narrow: false,
             autoplay: false,
             showlrc: 2,

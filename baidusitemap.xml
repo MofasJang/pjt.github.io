@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-18defer/</loc>
+    <loc>http://blog.panjiangtao.cn/posts/suibi1/</loc>
+    <lastmod>2020-10-12</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.panjiangtao.cn/posts/go-5yunsuanfu/</loc>
     <lastmod>2020-10-12</lastmod>
   </url>
   <url>
     <loc>http://blog.panjiangtao.cn/posts/daily/</loc>
-    <lastmod>2020-10-11</lastmod>
+    <lastmod>2020-10-12</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.panjiangtao.cn/posts/go-18defer/</loc>
+    <lastmod>2020-10-12</lastmod>
   </url>
   <url>
     <loc>http://blog.panjiangtao.cn/posts/go-17bingfa/</loc>
@@ -91,10 +99,6 @@
   <url>
     <loc>http://blog.panjiangtao.cn/posts/go-6tiaojian/</loc>
     <lastmod>2020-09-23</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-5yunsuanfu/</loc>
-    <lastmod>2020-09-22</lastmod>
   </url>
   <url>
     <loc>http://blog.panjiangtao.cn/posts/go-3bianliang/</loc>
