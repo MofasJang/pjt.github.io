@@ -180,6 +180,54 @@
       </tags>
   </entry>
   <entry>
+    <title>go语言defer语句</title>
+    <url>/posts/go-18defer/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info">
+            <p>本文转载自：<br>作者：simpleapples<br>链接：<a href="https://www.jianshu.com/p/79c029c0bd58">https://www.jianshu.com/p/79c029c0bd58</a><br>来源：简书</p>
+          </div>
+
+<h1 id="语句介绍"><a href="#语句介绍" class="headerlink" title="语句介绍"></a>语句介绍</h1><p>defer语句是Go中一个非常有用的特性，可以将一个方法延迟到包裹该方法的方法返回时执行，在实际应用中，defer语句可以充当其他语言中try…catch…的角色，也可以用来处理关闭文件句柄等收尾操作。</p>
+<a id="more"></a>
+
+<h1 id="触发时机"><a href="#触发时机" class="headerlink" title="触发时机"></a>触发时机</h1><ul>
+<li>包裹defer的函数返回时</li>
+<li>包裹defer的函数执行到末尾时</li>
+<li>所在的goroutine发生panic时</li>
+</ul>
+<h1 id="defer执行顺序"><a href="#defer执行顺序" class="headerlink" title="defer执行顺序"></a>defer执行顺序</h1><p>当一个方法中有多个defer时， defer会将要延迟执行的方法“压栈”，当defer被触发时，将所有“压栈”的方法“出栈”并执行。所以defer的执行顺序是LIFO的。</p>
+<p>所以下面这段代码的输出不是1 2 3，而是3 2 1。</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">stackingDefers</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;1&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;2&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;3&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h1><h2 id="坑1：defer在匿名返回值和命名返回值函数中的不同表现"><a href="#坑1：defer在匿名返回值和命名返回值函数中的不同表现" class="headerlink" title="坑1：defer在匿名返回值和命名返回值函数中的不同表现"></a>坑1：defer在匿名返回值和命名返回值函数中的不同表现</h2><p>先看下面两个方法执行的结果。</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">returnValues</span><span class="params">()</span> <span class="title">int</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> result <span class="keyword">int</span></span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        result++</span><br><span class="line">        fmt.Println(<span class="string">&quot;defer&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">namedReturnValues</span><span class="params">()</span> <span class="params">(result <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        result++</span><br><span class="line">        fmt.Println(<span class="string">&quot;defer&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的方法会输出0，下面的方法输出1。上面的方法使用了匿名返回值，下面的使用了命名返回值，除此之外其他的逻辑均相同，为什么输出的结果会有区别呢？</p>
+<p>要搞清这个问题首先需要了解defer的执行逻辑，文档中说defer语句在方法返回“时”触发，也就是说return和defer是“同时”执行的。以匿名返回值方法举例，过程如下。</p>
+<ul>
+<li>将result赋值给返回值（可以理解成Go自动创建了一个返回值retValue，相当于执行retValue = result）</li>
+<li>然后检查是否有defer，如果有则执行</li>
+<li>返回刚才创建的返回值（retValue）</li>
+</ul>
+<p>在这种情况下，defer中的修改是对result执行的，而不是retValue，所以defer返回的依然是retValue。在命名返回值方法中，由于返回值在方法定义时已经被定义，所以没有创建retValue的过程，result就是retValue，defer对于result的修改也会被直接返回。</p>
+<h2 id="坑2：在for循环中使用defer可能导致的性能问题"><a href="#坑2：在for循环中使用defer可能导致的性能问题" class="headerlink" title="坑2：在for循环中使用defer可能导致的性能问题"></a>坑2：在for循环中使用defer可能导致的性能问题</h2><p>看下面的代码</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">deferInLoops</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">100</span>; i++ &#123;</span><br><span class="line">        f, _ := os.Open(<span class="string">&quot;/etc/hosts&quot;</span>)</span><br><span class="line">        <span class="keyword">defer</span> f.Close()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>defer在紧邻创建资源的语句后生命力，看上去逻辑没有什么问题。但是和直接调用相比，defer的执行存在着额外的开销，例如defer会对其后需要的参数进行内存拷贝，还需要对defer结构进行压栈出栈操作。所以在循环中定义defer可能导致大量的资源开销，在本例中，可以将f.Close()语句前的defer去掉，来减少大量defer导致的额外资源消耗。</p>
+<h2 id="坑3：判断执行没有err之后，再defer释放资源"><a href="#坑3：判断执行没有err之后，再defer释放资源" class="headerlink" title="坑3：判断执行没有err之后，再defer释放资源"></a>坑3：判断执行没有err之后，再defer释放资源</h2><p>一些获取资源的操作可能会返回err参数，我们可以选择忽略返回的err参数，但是如果要使用defer进行延迟释放的的话，需要在使用defer之前先判断是否存在err，如果资源没有获取成功，即没有必要也不应该再对资源执行释放操作。如果不判断获取资源是否成功就执行释放操作的话，还有可能导致释放方法执行错误。</p>
+<p>正确写法如下。</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line">resp, err := http.Get(url)</span><br><span class="line"><span class="comment">// 先判断操作是否成功</span></span><br><span class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 如果操作成功，再进行Close操作</span></span><br><span class="line"><span class="keyword">defer</span> resp.Body.Close()</span><br></pre></td></tr></table></figure>
+
+<h2 id="坑4：调用os-Exit时defer不会被执行"><a href="#坑4：调用os-Exit时defer不会被执行" class="headerlink" title="坑4：调用os.Exit时defer不会被执行"></a>坑4：调用os.Exit时defer不会被执行</h2><p>当发生panic时，所在goroutine的所有defer会被执行，但是当调用os.Exit()方法退出程序时，defer并不会被执行。</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">deferExit</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;defer&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    os.Exit(<span class="number">0</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的defer并不会输出。</p>
+]]></content>
+      <categories>
+        <category>backend</category>
+        <category>go语言</category>
+      </categories>
+      <tags>
+        <tag>go语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>go语言并发</title>
     <url>/posts/go-17bingfa/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Go 语言支持并发，我们只需要通过 go 关键字来开启 goroutine 即可。</p>
@@ -1135,7 +1183,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-RIbhsOMR" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-UwoFFIZB" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1229,7 +1277,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-RIbhsOMR"),
+            element: document.getElementById("aplayer-UwoFFIZB"),
             narrow: false,
             autoplay: false,
             showlrc: 2,

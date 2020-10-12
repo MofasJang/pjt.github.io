@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"blog.panjiangtao.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="介绍Map 是一种无序的键值对的集合。Map 最重要的一点是通过 key 来快速检索数据，key 类似于索引，指向数据的值。 Map 是一种集合，所以我们可以像迭代数组和切片那样迭代它。不过，Map 是无序的，我们无法决定它的返回顺序，这是因为 Map 是使用 hash 表来实现的。 定义可以使用内建函数 make 也可以使用 map 关键字来定义 Map: 12345&#x2F;* 声明变量，默认 map">
+  <meta name="description" content="本文转载自：作者：simpleapples链接：https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;79c029c0bd58来源：简书             语句介绍defer语句是Go中一个非常有用的特性，可以将一个方法延迟到包裹该方法的方法返回时执行，在实际应用中，defer语句可以充当其他语言中try…catch…的角色，也可以用来处理关闭文件句柄等收尾操作。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="go语言Map">
-<meta property="og:url" content="http://blog.panjiangtao.cn/posts/go-14map/index.html">
+<meta property="og:title" content="go语言defer语句">
+<meta property="og:url" content="http://blog.panjiangtao.cn/posts/go-18defer/index.html">
 <meta property="og:site_name" content="PJT&#39;s Blog">
-<meta property="og:description" content="介绍Map 是一种无序的键值对的集合。Map 最重要的一点是通过 key 来快速检索数据，key 类似于索引，指向数据的值。 Map 是一种集合，所以我们可以像迭代数组和切片那样迭代它。不过，Map 是无序的，我们无法决定它的返回顺序，这是因为 Map 是使用 hash 表来实现的。 定义可以使用内建函数 make 也可以使用 map 关键字来定义 Map: 12345&#x2F;* 声明变量，默认 map">
+<meta property="og:description" content="本文转载自：作者：simpleapples链接：https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;79c029c0bd58来源：简书             语句介绍defer语句是Go中一个非常有用的特性，可以将一个方法延迟到包裹该方法的方法返回时执行，在实际应用中，defer语句可以充当其他语言中try…catch…的角色，也可以用来处理关闭文件句柄等收尾操作。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-24T12:37:36.000Z">
-<meta property="article:modified_time" content="2020-09-24T12:49:42.824Z">
+<meta property="article:published_time" content="2020-10-12T06:00:56.000Z">
+<meta property="article:modified_time" content="2020-10-12T06:12:45.502Z">
 <meta property="article:author" content="大膜法师江">
 <meta property="article:tag" content="go语言">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://blog.panjiangtao.cn/posts/go-14map/">
+<link rel="canonical" href="http://blog.panjiangtao.cn/posts/go-18defer/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>go语言Map | PJT's Blog</title>
+  <title>go语言defer语句 | PJT's Blog</title>
   
 
 
@@ -205,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.panjiangtao.cn/posts/go-14map/">
+    <link itemprop="mainEntityOfPage" href="http://blog.panjiangtao.cn/posts/go-18defer/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -218,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          go语言Map
+          go语言defer语句
         </h1>
 
         <div class="post-meta">
@@ -229,7 +229,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-09-24 20:37:36 / 修改时间：20:49:42" itemprop="dateCreated datePublished" datetime="2020-09-24T20:37:36+08:00">2020-09-24</time>
+              <time title="创建时间：2020-10-12 14:00:56 / 修改时间：14:12:45" itemprop="dateCreated datePublished" datetime="2020-10-12T14:00:56+08:00">2020-10-12</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -246,7 +246,7 @@
             </span>
 
           
-            <span id="/posts/go-14map/" class="post-meta-item leancloud_visitors" data-flag-title="go语言Map" title="阅读次数">
+            <span id="/posts/go-18defer/" class="post-meta-item leancloud_visitors" data-flag-title="go语言defer语句" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -268,8 +268,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/go-14map/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/go-14map/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/go-18defer/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/go-18defer/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -279,14 +279,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.2k</span>
+              <span>2.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -298,19 +298,43 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Map 是一种无序的键值对的集合。Map 最重要的一点是通过 key 来快速检索数据，key 类似于索引，指向数据的值。</p>
-<p>Map 是一种集合，所以我们可以像迭代数组和切片那样迭代它。不过，Map 是无序的，我们无法决定它的返回顺序，这是因为 Map 是使用 hash 表来实现的。</p>
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>可以使用内建函数 make 也可以使用 map 关键字来定义 Map:</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 声明变量，默认 map 是 nil */</span></span><br><span class="line"><span class="keyword">var</span> map_variable <span class="keyword">map</span>[key_data_type]value_data_type</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 使用 make 函数 */</span></span><br><span class="line">map_variable := <span class="built_in">make</span>(<span class="keyword">map</span>[key_data_type]value_data_type)</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<div class="note info">
-            <p>如果不初始化 map，那么就会创建一个 nil map。nil map 不能用来存放键值对</p>
+        <div class="note info">
+            <p>本文转载自：<br>作者：simpleapples<br>链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/79c029c0bd58">https://www.jianshu.com/p/79c029c0bd58</a><br>来源：简书</p>
           </div>
 
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> countryCapitalMap <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span> <span class="comment">/*创建集合 */</span></span><br><span class="line">    countryCapitalMap = <span class="built_in">make</span>(<span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* map插入key - value对,各个国家对应的首都 */</span></span><br><span class="line">    countryCapitalMap [ <span class="string">&quot;France&quot;</span> ] = <span class="string">&quot;巴黎&quot;</span></span><br><span class="line">    countryCapitalMap [ <span class="string">&quot;Italy&quot;</span> ] = <span class="string">&quot;罗马&quot;</span></span><br><span class="line">    countryCapitalMap [ <span class="string">&quot;Japan&quot;</span> ] = <span class="string">&quot;东京&quot;</span></span><br><span class="line">    countryCapitalMap [ <span class="string">&quot;India &quot;</span> ] = <span class="string">&quot;新德里&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/*使用键输出地图值 */</span> </span><br><span class="line">    <span class="keyword">for</span> country := <span class="keyword">range</span> countryCapitalMap &#123;</span><br><span class="line">        fmt.Println(country, <span class="string">&quot;首都是&quot;</span>, countryCapitalMap [country])</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*查看元素在集合中是否存在 */</span></span><br><span class="line">    capital, ok := countryCapitalMap [ <span class="string">&quot;American&quot;</span> ] <span class="comment">/*如果确定是真实的,则存在,否则不存在 */</span></span><br><span class="line">    <span class="comment">/*fmt.Println(capital) */</span></span><br><span class="line">    <span class="comment">/*fmt.Println(ok) */</span></span><br><span class="line">    <span class="keyword">if</span> (ok) &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;American 的首都是&quot;</span>, capital)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;American 的首都不存在&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="语句介绍"><a href="#语句介绍" class="headerlink" title="语句介绍"></a>语句介绍</h1><p>defer语句是Go中一个非常有用的特性，可以将一个方法延迟到包裹该方法的方法返回时执行，在实际应用中，defer语句可以充当其他语言中try…catch…的角色，也可以用来处理关闭文件句柄等收尾操作。</p>
+<a id="more"></a>
 
-<h2 id="delete-函数"><a href="#delete-函数" class="headerlink" title="delete() 函数"></a>delete() 函数</h2><p>delete() 函数用于删除集合的元素, 参数为 map 和其对应的 key。</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*删除上例中元素*/</span> </span><br><span class="line"><span class="built_in">delete</span>(countryCapitalMap, <span class="string">&quot;France&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="触发时机"><a href="#触发时机" class="headerlink" title="触发时机"></a>触发时机</h1><ul>
+<li>包裹defer的函数返回时</li>
+<li>包裹defer的函数执行到末尾时</li>
+<li>所在的goroutine发生panic时</li>
+</ul>
+<h1 id="defer执行顺序"><a href="#defer执行顺序" class="headerlink" title="defer执行顺序"></a>defer执行顺序</h1><p>当一个方法中有多个defer时， defer会将要延迟执行的方法“压栈”，当defer被触发时，将所有“压栈”的方法“出栈”并执行。所以defer的执行顺序是LIFO的。</p>
+<p>所以下面这段代码的输出不是1 2 3，而是3 2 1。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">stackingDefers</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;1&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;2&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;3&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h1><h2 id="坑1：defer在匿名返回值和命名返回值函数中的不同表现"><a href="#坑1：defer在匿名返回值和命名返回值函数中的不同表现" class="headerlink" title="坑1：defer在匿名返回值和命名返回值函数中的不同表现"></a>坑1：defer在匿名返回值和命名返回值函数中的不同表现</h2><p>先看下面两个方法执行的结果。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">returnValues</span><span class="params">()</span> <span class="title">int</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> result <span class="keyword">int</span></span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        result++</span><br><span class="line">        fmt.Println(<span class="string">&quot;defer&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">namedReturnValues</span><span class="params">()</span> <span class="params">(result <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        result++</span><br><span class="line">        fmt.Println(<span class="string">&quot;defer&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的方法会输出0，下面的方法输出1。上面的方法使用了匿名返回值，下面的使用了命名返回值，除此之外其他的逻辑均相同，为什么输出的结果会有区别呢？</p>
+<p>要搞清这个问题首先需要了解defer的执行逻辑，文档中说defer语句在方法返回“时”触发，也就是说return和defer是“同时”执行的。以匿名返回值方法举例，过程如下。</p>
+<ul>
+<li>将result赋值给返回值（可以理解成Go自动创建了一个返回值retValue，相当于执行retValue = result）</li>
+<li>然后检查是否有defer，如果有则执行</li>
+<li>返回刚才创建的返回值（retValue）</li>
+</ul>
+<p>在这种情况下，defer中的修改是对result执行的，而不是retValue，所以defer返回的依然是retValue。在命名返回值方法中，由于返回值在方法定义时已经被定义，所以没有创建retValue的过程，result就是retValue，defer对于result的修改也会被直接返回。</p>
+<h2 id="坑2：在for循环中使用defer可能导致的性能问题"><a href="#坑2：在for循环中使用defer可能导致的性能问题" class="headerlink" title="坑2：在for循环中使用defer可能导致的性能问题"></a>坑2：在for循环中使用defer可能导致的性能问题</h2><p>看下面的代码</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">deferInLoops</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">100</span>; i++ &#123;</span><br><span class="line">        f, _ := os.Open(<span class="string">&quot;/etc/hosts&quot;</span>)</span><br><span class="line">        <span class="keyword">defer</span> f.Close()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>defer在紧邻创建资源的语句后生命力，看上去逻辑没有什么问题。但是和直接调用相比，defer的执行存在着额外的开销，例如defer会对其后需要的参数进行内存拷贝，还需要对defer结构进行压栈出栈操作。所以在循环中定义defer可能导致大量的资源开销，在本例中，可以将f.Close()语句前的defer去掉，来减少大量defer导致的额外资源消耗。</p>
+<h2 id="坑3：判断执行没有err之后，再defer释放资源"><a href="#坑3：判断执行没有err之后，再defer释放资源" class="headerlink" title="坑3：判断执行没有err之后，再defer释放资源"></a>坑3：判断执行没有err之后，再defer释放资源</h2><p>一些获取资源的操作可能会返回err参数，我们可以选择忽略返回的err参数，但是如果要使用defer进行延迟释放的的话，需要在使用defer之前先判断是否存在err，如果资源没有获取成功，即没有必要也不应该再对资源执行释放操作。如果不判断获取资源是否成功就执行释放操作的话，还有可能导致释放方法执行错误。</p>
+<p>正确写法如下。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">resp, err := http.Get(url)</span><br><span class="line"><span class="comment">// 先判断操作是否成功</span></span><br><span class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 如果操作成功，再进行Close操作</span></span><br><span class="line"><span class="keyword">defer</span> resp.Body.Close()</span><br></pre></td></tr></table></figure>
+
+<h2 id="坑4：调用os-Exit时defer不会被执行"><a href="#坑4：调用os-Exit时defer不会被执行" class="headerlink" title="坑4：调用os.Exit时defer不会被执行"></a>坑4：调用os.Exit时defer不会被执行</h2><p>当发生panic时，所在goroutine的所有defer会被执行，但是当调用os.Exit()方法退出程序时，defer并不会被执行。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">deferExit</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">&quot;defer&quot;</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    os.Exit(<span class="number">0</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的defer并不会输出。</p>
+
     </div>
 
     
@@ -337,7 +361,7 @@
 </div>
 
 
-      <h3>相关文章：</h3><ul class="related-posts"><li><a href="/posts/go-18defer/">go语言defer语句</a></li><li><a href="/posts/go-17bingfa/">go语言并发</a></li><li><a href="/posts/go-16error/">go语言错误处理</a></li><li><a href="/posts/go-15interface/">go语言接口</a></li><li><a href="/posts/go-13range/">go语言range</a></li><li><a href="/posts/go-12slice/">go语言——切片</a></li><li><a href="/posts/go-11struct/">go语言结构体</a></li><li><a href="/posts/go-10zhizhen/">go语言指针</a></li><li><a href="/posts/go-9array/">go语言数组</a></li><li><a href="/posts/go-8func/">go语言函数</a></li></ul>
+      <h3>相关文章：</h3><ul class="related-posts"><li><a href="/posts/go-17bingfa/">go语言并发</a></li><li><a href="/posts/go-16error/">go语言错误处理</a></li><li><a href="/posts/go-15interface/">go语言接口</a></li><li><a href="/posts/go-14map/">go语言Map</a></li><li><a href="/posts/go-13range/">go语言range</a></li><li><a href="/posts/go-12slice/">go语言——切片</a></li><li><a href="/posts/go-11struct/">go语言结构体</a></li><li><a href="/posts/go-10zhizhen/">go语言指针</a></li><li><a href="/posts/go-9array/">go语言数组</a></li><li><a href="/posts/go-8func/">go语言函数</a></li></ul>
         
 
 <div>
@@ -347,7 +371,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.panjiangtao.cn/posts/go-14map/" title="go语言Map">http://blog.panjiangtao.cn/posts/go-14map/</a>
+    <a href="http://blog.panjiangtao.cn/posts/go-18defer/" title="go语言defer语句">http://blog.panjiangtao.cn/posts/go-18defer/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -367,13 +391,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/posts/go-13range/" rel="prev" title="go语言range">
-      <i class="fa fa-chevron-left"></i> go语言range
+    <a href="/posts/go-17bingfa/" rel="prev" title="go语言并发">
+      <i class="fa fa-chevron-left"></i> go语言并发
     </a></div>
-      <div class="post-nav-item">
-    <a href="/posts/baidu-push/" rel="next" title="Hexo博客将链接自动提交百度">
-      Hexo博客将链接自动提交百度 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -433,7 +454,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">2.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B"><span class="nav-number">3.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#delete-%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">delete() 函数</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%AD%E5%8F%A5%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">语句介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A6%E5%8F%91%E6%97%B6%E6%9C%BA"><span class="nav-number">2.</span> <span class="nav-text">触发时机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#defer%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F"><span class="nav-number">3.</span> <span class="nav-text">defer执行顺序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="nav-number">4.</span> <span class="nav-text">注意点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%911%EF%BC%9Adefer%E5%9C%A8%E5%8C%BF%E5%90%8D%E8%BF%94%E5%9B%9E%E5%80%BC%E5%92%8C%E5%91%BD%E5%90%8D%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84%E4%B8%8D%E5%90%8C%E8%A1%A8%E7%8E%B0"><span class="nav-number">4.1.</span> <span class="nav-text">坑1：defer在匿名返回值和命名返回值函数中的不同表现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%912%EF%BC%9A%E5%9C%A8for%E5%BE%AA%E7%8E%AF%E4%B8%AD%E4%BD%BF%E7%94%A8defer%E5%8F%AF%E8%83%BD%E5%AF%BC%E8%87%B4%E7%9A%84%E6%80%A7%E8%83%BD%E9%97%AE%E9%A2%98"><span class="nav-number">4.2.</span> <span class="nav-text">坑2：在for循环中使用defer可能导致的性能问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%913%EF%BC%9A%E5%88%A4%E6%96%AD%E6%89%A7%E8%A1%8C%E6%B2%A1%E6%9C%89err%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%86%8Ddefer%E9%87%8A%E6%94%BE%E8%B5%84%E6%BA%90"><span class="nav-number">4.3.</span> <span class="nav-text">坑3：判断执行没有err之后，再defer释放资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%914%EF%BC%9A%E8%B0%83%E7%94%A8os-Exit%E6%97%B6defer%E4%B8%8D%E4%BC%9A%E8%A2%AB%E6%89%A7%E8%A1%8C"><span class="nav-number">4.4.</span> <span class="nav-text">坑4：调用os.Exit时defer不会被执行</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

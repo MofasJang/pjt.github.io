@@ -1,3 +1,4 @@
+http://blog.panjiangtao.cn/posts/go-18defer/
 http://blog.panjiangtao.cn/posts/go-17bingfa/
 http://blog.panjiangtao.cn/posts/go-16error/
 http://blog.panjiangtao.cn/posts/go-15interface/
