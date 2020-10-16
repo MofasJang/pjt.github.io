@@ -1,3 +1,7 @@
+http://blog.panjiangtao.cn/posts/php-5superglobal/
+http://blog.panjiangtao.cn/posts/php-4array/
+http://blog.panjiangtao.cn/posts/php-3oprator/
+http://blog.panjiangtao.cn/posts/php-2EOF/
 http://blog.panjiangtao.cn/posts/php-1var/
 http://blog.panjiangtao.cn/posts/suibi1/
 http://blog.panjiangtao.cn/posts/go-18defer/
