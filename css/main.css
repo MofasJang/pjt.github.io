@@ -1271,7 +1271,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #662973;
+  background: #ffffc7;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2814,7 +2814,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 body {
-  background: url("http://qh04sczlg.hd-bkt.clouddn.com/bg3.jpg");
+  background: url("/images/bg3.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

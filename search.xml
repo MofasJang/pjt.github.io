@@ -221,7 +221,7 @@
 
 </li>
 </ul>
-<h2 id="local"><a href="#local" class="headerlink" title="local"></a>local</h2><p>　　默认情况下函数内部声明的变量皆为局部变量，仅在<br>函数内部访问。</p>
+<h2 id="local"><a href="#local" class="headerlink" title="local"></a>local</h2><p>　　默认情况下函数内部声明的变量皆为局部变量，仅在函数内部访问。</p>
 <h2 id="global"><a href="#global" class="headerlink" title="global"></a>global</h2><ol>
 <li>global 关键字用于函数内访问全局变量。</li>
 </ol>
@@ -1272,7 +1272,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-noQDWJiq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-oEUFiLxg" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1366,7 +1366,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-noQDWJiq"),
+            element: document.getElementById("aplayer-oEUFiLxg"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
