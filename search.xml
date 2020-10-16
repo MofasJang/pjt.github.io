@@ -1272,7 +1272,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-CVwPseHy" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-noQDWJiq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1366,7 +1366,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-CVwPseHy"),
+            element: document.getElementById("aplayer-noQDWJiq"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
