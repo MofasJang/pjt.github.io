@@ -5,13 +5,19 @@
     <url>/posts/daily/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
+            <h3 id="人们理解杜尚花了100年时间，"><a href="#人们理解杜尚花了100年时间，" class="headerlink" title="人们理解杜尚花了100年时间，"></a>人们理解杜尚花了100年时间，</h3><h3 id="理解我估计要更久一点。"><a href="#理解我估计要更久一点。" class="headerlink" title="理解我估计要更久一点。"></a>理解我估计要更久一点。</h3><h3 id="————白南准"><a href="#————白南准" class="headerlink" title="————白南准"></a>————白南准</h3>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>2020.10.17</p>
+<a id="more"></a>
+
+
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
             <h3 id="我肯定，"><a href="#我肯定，" class="headerlink" title="我肯定，"></a>我肯定，</h3><h3 id="在空无的中心，"><a href="#在空无的中心，" class="headerlink" title="在空无的中心，"></a>在空无的中心，</h3><h3 id="如同在人的心脏"><a href="#如同在人的心脏" class="headerlink" title="如同在人的心脏,"></a>如同在人的心脏,</h3><h3 id="有火在燃烧。"><a href="#有火在燃烧。" class="headerlink" title="有火在燃烧。"></a>有火在燃烧。</h3><h3 id="————伊夫·克莱因"><a href="#————伊夫·克莱因" class="headerlink" title="————伊夫·克莱因"></a>————伊夫·克莱因</h3>
             <i class="fa fa-quote-right"></i>
           </blockquote>
 <p>2020.10.16</p>
-<a id="more"></a>
-
-
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <h3 id="随着年龄的增长，"><a href="#随着年龄的增长，" class="headerlink" title="随着年龄的增长，"></a>随着年龄的增长，</h3><h3 id="我想起了我们古老的文字、遗产和价值观。"><a href="#我想起了我们古老的文字、遗产和价值观。" class="headerlink" title="我想起了我们古老的文字、遗产和价值观。"></a>我想起了我们古老的文字、遗产和价值观。</h3><h3 id="它们中的任何一个都代表着一种完整的理解"><a href="#它们中的任何一个都代表着一种完整的理解" class="headerlink" title="它们中的任何一个都代表着一种完整的理解,"></a>它们中的任何一个都代表着一种完整的理解,</h3><h3 id="即唯一确定的是不确定。"><a href="#即唯一确定的是不确定。" class="headerlink" title="即唯一确定的是不确定。"></a>即唯一确定的是不确定。</h3><h3 id="————巴克里希纳·多西"><a href="#————巴克里希纳·多西" class="headerlink" title="————巴克里希纳·多西"></a>————巴克里希纳·多西</h3>
@@ -1429,7 +1435,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-bekYBOWa" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-FWEirPBq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1523,7 +1529,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-bekYBOWa"),
+            element: document.getElementById("aplayer-FWEirPBq"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
