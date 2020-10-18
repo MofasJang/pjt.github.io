@@ -1,3 +1,4 @@
+http://blog.panjiangtao.cn/posts/php-6magic/
 http://blog.panjiangtao.cn/posts/php-5superglobal/
 http://blog.panjiangtao.cn/posts/php-4array/
 http://blog.panjiangtao.cn/posts/php-3oprator/

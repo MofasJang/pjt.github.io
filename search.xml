@@ -222,6 +222,63 @@
       </tags>
   </entry>
   <entry>
+    <title>php魔术常量</title>
+    <url>/posts/php-6magic/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>　　PHP 向它运行的任何脚本提供了大量的预定义常量。<br>　　不过很多常量都是由不同的扩展库定义的，只有在加载了这些扩展库时才会出现，或者动态加载后，或者在编译时已经包括进去了。<br>　　有八个魔术常量它们的值随着它们在代码中的位置改变而改变。</p>
+<h1 id="1-LINE"><a href="#1-LINE" class="headerlink" title="1. LINE"></a>1. <strong>LINE</strong></h1><p>　　文件中的当前行号。</p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;这是第 &quot; &#x27;</span>  . <span class="keyword">__LINE__</span> . <span class="string">&#x27; &quot; 行&#x27;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>以上实例输出结果为：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">这是第 “ <span class="number">2</span> ” 行</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-FILE"><a href="#2-FILE" class="headerlink" title="2. FILE"></a>2. <strong>FILE</strong></h1><p>　　文件的完整路径和文件名。如果用在被包含文件中，则返回被包含的文件名。</p>
+<p>　　自 PHP 4.0.2 起，<strong>FILE</strong> 总是包含一个绝对路径（如果是符号连接，则是解析后的绝对路径），而在此之前的版本有时会包含一个相对路径。</p>
+<h2 id="实例-1"><a href="#实例-1" class="headerlink" title="实例:"></a>实例:</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;该文件位于 &quot; &#x27;</span>  . <span class="keyword">__FILE__</span> . <span class="string">&#x27; &quot; &#x27;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>以上实例输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">该文件位于 “ E:\wamp\www\test\index.php ”</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-DIR"><a href="#3-DIR" class="headerlink" title="3. DIR"></a>3. <strong>DIR</strong></h1><p>　　文件所在的目录。如果用在被包括文件中，则返回被包括的文件所在的目录。</p>
+<p>　　它等价于 dirname(<strong>FILE</strong>)。除非是根目录，否则目录中名不包括末尾的斜杠。（PHP 5.3.0中新增）</p>
+<h2 id="实例-2"><a href="#实例-2" class="headerlink" title="实例"></a>实例</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;该文件位于 &quot; &#x27;</span>  . <span class="keyword">__DIR__</span> . <span class="string">&#x27; &quot; &#x27;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>以上实例输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">该文件位于 “ E:\wamp\www\test ”</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-FUNCTION"><a href="#4-FUNCTION" class="headerlink" title="4. FUNCTION"></a>4. <strong>FUNCTION</strong></h1><p>　　函数名称（PHP 4.3.0 新加）。自 PHP 5 起本常量返回该函数被定义时的名字（区分大小写）。在 PHP 4 中该值总是小写字母的。</p>
+<h2 id="实例-3"><a href="#实例-3" class="headerlink" title="实例"></a>实例</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span>  <span class="string">&#x27;函数名为：&#x27;</span> . <span class="keyword">__FUNCTION__</span> ;</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>以上实例输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">函数名为：test</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-CLASS"><a href="#5-CLASS" class="headerlink" title="5. CLASS"></a>5. <strong>CLASS</strong></h1><p>　　类的名称（PHP 4.3.0 新加）。自 PHP 5 起本常量返回该类被定义时的名字（区分大小写）。</p>
+<p>　　在 PHP 4 中该值总是小写字母的。类名包括其被声明的作用区域（例如 Foo\Bar）。注意自 PHP 5.4 起 <strong>CLASS</strong> 对 trait 也起作用。当用在 trait 方法中时，<strong>CLASS</strong> 是调用 trait 方法的类的名字。</p>
+<h2 id="实例-4"><a href="#实例-4" class="headerlink" title="实例"></a>实例</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">_print</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;类名为：&#x27;</span>  . <span class="keyword">__CLASS__</span> . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span>  <span class="string">&#x27;函数名为：&#x27;</span> . <span class="keyword">__FUNCTION__</span> ;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$t = <span class="keyword">new</span> test();</span><br><span class="line">$t-&gt;_print();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>以上实例输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类名为：test</span><br><span class="line">函数名为：_print</span><br></pre></td></tr></table></figure>
+
+<h1 id="6-TRAIT"><a href="#6-TRAIT" class="headerlink" title="6. TRAIT"></a>6. <strong>TRAIT</strong></h1><p>　　Trait 的名字（PHP 5.4.0 新加）。自 PHP 5.4.0 起，PHP 实现了代码复用的一个方法，称为 traits。</p>
+<p>　　Trait 名包括其被声明的作用区域（例如 Foo\Bar）。</p>
+<p>　　从基类继承的成员被插入的 SayWorld Trait 中的 MyHelloWorld 方法所覆盖。其行为 MyHelloWorld 类中定义的方法一致。优先顺序是当前类中的方法会覆盖 trait 方法，而 trait 方法又覆盖了基类中的方法。</p>
+<h2 id="实例-5"><a href="#实例-5" class="headerlink" title="实例"></a>实例</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Base</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">sayHello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;Hello &#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">trait</span> SayWorld &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">sayHello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">parent</span>::sayHello();</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;World!&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyHelloWorld</span> <span class="keyword">extends</span> <span class="title">Base</span> </span>&#123;</span><br><span class="line">    <span class="keyword">use</span> <span class="title">SayWorld</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">$o = <span class="keyword">new</span> MyHelloWorld();</span><br><span class="line">$o-&gt;sayHello();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>以上例程会输出：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
+
+<h1 id="7-METHOD"><a href="#7-METHOD" class="headerlink" title="7. METHOD"></a>7. <strong>METHOD</strong></h1><p>　　类的方法名（PHP 5.0.0 新加）。返回该方法被定义时的名字（区分大小写）。</p>
+<h2 id="实例-6"><a href="#实例-6" class="headerlink" title="实例:"></a>实例:</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span>  <span class="string">&#x27;函数名为：&#x27;</span> . <span class="keyword">__METHOD__</span> ;</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>以上实例输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">函数名为：test</span><br></pre></td></tr></table></figure>
+
+<h1 id="8-NAMESPACE"><a href="#8-NAMESPACE" class="headerlink" title="8. NAMESPACE"></a>8. <strong>NAMESPACE</strong></h1><p>　　当前命名空间的名称（区分大小写）。此常量是在编译时定义的（PHP 5.3.0 新增）。</p>
+<h2 id="实例-7"><a href="#实例-7" class="headerlink" title="实例"></a>实例</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">MyProject</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;命名空间为：&quot;&#x27;</span>, <span class="keyword">__NAMESPACE__</span>, <span class="string">&#x27;&quot;&#x27;</span>; <span class="comment">// 输出 &quot;MyProject&quot;</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>以上实例输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">命名空间为：&quot;MyProject&quot;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>frontend</category>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>php超级全局变量</title>
     <url>/posts/php-5superglobal/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>　　PHP中预定义了几个超级全局变量（superglobals） ，这意味着它们在一个脚本的全部作用域中都可用。 你不需要特别说明，就可以在函数及类中使用。</p>
@@ -283,7 +340,7 @@
 <h2 id="关联数组"><a href="#关联数组" class="headerlink" title="关联数组"></a>关联数组</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><ol>
 <li><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">$age=<span class="keyword">array</span>(<span class="string">&quot;Peter&quot;</span>=&gt;<span class="string">&quot;35&quot;</span>,<span class="string">&quot;Ben&quot;</span>=&gt;<span class="string">&quot;37&quot;</span>,<span class="string">&quot;Joe&quot;</span>=&gt;<span class="string">&quot;43&quot;</span>);</span><br></pre></td></tr></table></figure></li>
 <li><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">$age[<span class="string">&#x27;Peter&#x27;</span>]=<span class="string">&quot;35&quot;</span>;</span><br><span class="line">$age[<span class="string">&#x27;Ben&#x27;</span>]=<span class="string">&quot;37&quot;</span>;</span><br><span class="line">$age[<span class="string">&#x27;Joe&#x27;</span>]=<span class="string">&quot;43&quot;</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="遍历关联数组"><a href="#遍历关联数组" class="headerlink" title="遍历关联数组"></a>遍历关联数组</h3>遍历并打印关联数组中的所有值，您可以使用 foreach 循环，如下所示：<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$age=<span class="keyword">array</span>(<span class="string">&quot;Peter&quot;</span>=&gt;<span class="string">&quot;35&quot;</span>,<span class="string">&quot;Ben&quot;</span>=&gt;<span class="string">&quot;37&quot;</span>,<span class="string">&quot;Joe&quot;</span>=&gt;<span class="string">&quot;43&quot;</span>);</span><br><span class="line"> </span><br><span class="line"><span class="keyword">foreach</span>($age <span class="keyword">as</span> $x=&gt;$x_value)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;Key=&quot;</span> . $x . <span class="string">&quot;, Value=&quot;</span> . $x_value;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="遍历关联数组"><a href="#遍历关联数组" class="headerlink" title="遍历关联数组"></a>遍历关联数组</h3>遍历并打印关联数组中的所有值，您可以使用 foreach 循环，如下所示：<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$age=<span class="keyword">array</span>(<span class="string">&quot;Peter&quot;</span>=&gt;<span class="string">&quot;35&quot;</span>,<span class="string">&quot;Ben&quot;</span>=&gt;<span class="string">&quot;37&quot;</span>,<span class="string">&quot;Joe&quot;</span>=&gt;<span class="string">&quot;43&quot;</span>);</span><br><span class="line"> </span><br><span class="line"><span class="keyword">foreach</span>($age <span class="keyword">as</span> $x=&gt;$x_value)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;Key=&quot;</span> . $x . <span class="string">&quot;, Value=&quot;</span> . $x_value . PHP_EOL;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
@@ -1441,7 +1498,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-QNoLuzLZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-iRnTROxT" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1535,7 +1592,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-QNoLuzLZ"),
+            element: document.getElementById("aplayer-iRnTROxT"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
