@@ -1,167 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/php-7oop/</loc>
+    <loc>http://www.panjiangtao.cn/posts/daily/</loc>
+    <lastmod>2020-10-19</lastmod>
+  </url>
+  <url>
+    <loc>http://www.panjiangtao.cn/posts/php-7oop/</loc>
     <lastmod>2020-10-18</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/php-4array/</loc>
+    <loc>http://www.panjiangtao.cn/posts/php-4array/</loc>
     <lastmod>2020-10-18</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/php-6magic/</loc>
+    <loc>http://www.panjiangtao.cn/posts/php-6magic/</loc>
     <lastmod>2020-10-18</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/daily/</loc>
-    <lastmod>2020-10-18</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.panjiangtao.cn/posts/php-5superglobal/</loc>
+    <loc>http://www.panjiangtao.cn/posts/php-5superglobal/</loc>
     <lastmod>2020-10-16</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/php-1var/</loc>
+    <loc>http://www.panjiangtao.cn/posts/php-1var/</loc>
     <lastmod>2020-10-16</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/php-3oprator/</loc>
+    <loc>http://www.panjiangtao.cn/posts/php-3oprator/</loc>
     <lastmod>2020-10-16</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/php-2EOF/</loc>
+    <loc>http://www.panjiangtao.cn/posts/php-2EOF/</loc>
     <lastmod>2020-10-16</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/suibi1/</loc>
+    <loc>http://www.panjiangtao.cn/posts/suibi1/</loc>
     <lastmod>2020-10-14</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-5yunsuanfu/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-5yunsuanfu/</loc>
     <lastmod>2020-10-12</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-18defer/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-18defer/</loc>
     <lastmod>2020-10-12</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-17bingfa/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-17bingfa/</loc>
     <lastmod>2020-09-25</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-16error/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-16error/</loc>
     <lastmod>2020-09-25</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-15interface/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-15interface/</loc>
     <lastmod>2020-09-25</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/baidu-push/</loc>
+    <loc>http://www.panjiangtao.cn/posts/baidu-push/</loc>
     <lastmod>2020-09-25</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-14map/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-14map/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-13range/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-13range/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-12slice/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-12slice/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-11struct/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-11struct/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-10zhizhen/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-10zhizhen/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-9array/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-9array/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/chulian/</loc>
+    <loc>http://www.panjiangtao.cn/posts/chulian/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/jiwang/</loc>
+    <loc>http://www.panjiangtao.cn/posts/jiwang/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/bianyi/</loc>
+    <loc>http://www.panjiangtao.cn/posts/bianyi/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/caozuoxitong/</loc>
+    <loc>http://www.panjiangtao.cn/posts/caozuoxitong/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/jizu/</loc>
+    <loc>http://www.panjiangtao.cn/posts/jizu/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/ruanti/</loc>
+    <loc>http://www.panjiangtao.cn/posts/ruanti/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/guanko/</loc>
+    <loc>http://www.panjiangtao.cn/posts/guanko/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/test/</loc>
+    <loc>http://www.panjiangtao.cn/posts/test/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-8func/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-8func/</loc>
     <lastmod>2020-09-23</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-7xunhuan/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-7xunhuan/</loc>
     <lastmod>2020-09-23</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-6tiaojian/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-6tiaojian/</loc>
     <lastmod>2020-09-23</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-3bianliang/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-3bianliang/</loc>
     <lastmod>2020-09-22</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-2basic/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-2basic/</loc>
     <lastmod>2020-09-22</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-4changliang/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-4changliang/</loc>
     <lastmod>2020-09-22</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/go-1intruduct/</loc>
+    <loc>http://www.panjiangtao.cn/posts/go-1intruduct/</loc>
     <lastmod>2020-09-22</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/harmony-start/</loc>
+    <loc>http://www.panjiangtao.cn/posts/harmony-start/</loc>
     <lastmod>2020-09-20</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/chenwujian/</loc>
+    <loc>http://www.panjiangtao.cn/posts/chenwujian/</loc>
     <lastmod>2020-09-19</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/Vue-rest/</loc>
+    <loc>http://www.panjiangtao.cn/posts/Vue-rest/</loc>
     <lastmod>2020-09-19</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/Socket-chatroom/</loc>
+    <loc>http://www.panjiangtao.cn/posts/Socket-chatroom/</loc>
     <lastmod>2020-09-19</lastmod>
   </url>
   <url>
-    <loc>http://blog.panjiangtao.cn/posts/hello-world/</loc>
+    <loc>http://www.panjiangtao.cn/posts/hello-world/</loc>
     <lastmod>2020-09-17</lastmod>
   </url>
 </urlset> 

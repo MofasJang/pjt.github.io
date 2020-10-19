@@ -5,13 +5,19 @@
     <url>/posts/daily/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
+            <h3 id="我不喜欢“惊人”这个词，"><a href="#我不喜欢“惊人”这个词，" class="headerlink" title="我不喜欢“惊人”这个词，"></a>我不喜欢“惊人”这个词，</h3><h3 id="我在寻找意想不到的东西。"><a href="#我在寻找意想不到的东西。" class="headerlink" title="我在寻找意想不到的东西。"></a>我在寻找意想不到的东西。</h3><h3 id="寻找那些我从来没见过的东西……"><a href="#寻找那些我从来没见过的东西……" class="headerlink" title="寻找那些我从来没见过的东西……"></a>寻找那些我从来没见过的东西……</h3><h3 id="我在拍这些照片，"><a href="#我在拍这些照片，" class="headerlink" title="我在拍这些照片，"></a>我在拍这些照片，</h3><h3 id="我觉得义不容辞。"><a href="#我觉得义不容辞。" class="headerlink" title="我觉得义不容辞。"></a>我觉得义不容辞。</h3><h3 id="————罗伯特·梅普尔索普"><a href="#————罗伯特·梅普尔索普" class="headerlink" title="————罗伯特·梅普尔索普"></a>————罗伯特·梅普尔索普</h3>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>2020.10.19</p>
+<a id="more"></a>
+
+
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
             <h3 id="我的关注永远不是艺术，"><a href="#我的关注永远不是艺术，" class="headerlink" title="我的关注永远不是艺术，"></a>我的关注永远不是艺术，</h3><h3 id="但总是可以使用什么艺术。"><a href="#但总是可以使用什么艺术。" class="headerlink" title="但总是可以使用什么艺术。"></a>但总是可以使用什么艺术。</h3><h3 id="————格哈德·里希特"><a href="#————格哈德·里希特" class="headerlink" title="————格哈德·里希特"></a>————格哈德·里希特</h3>
             <i class="fa fa-quote-right"></i>
           </blockquote>
 <p>2020.10.18</p>
-<a id="more"></a>
-
-
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <h3 id="人们理解杜尚花了100年时间，"><a href="#人们理解杜尚花了100年时间，" class="headerlink" title="人们理解杜尚花了100年时间，"></a>人们理解杜尚花了100年时间，</h3><h3 id="理解我估计要更久一点。"><a href="#理解我估计要更久一点。" class="headerlink" title="理解我估计要更久一点。"></a>理解我估计要更久一点。</h3><h3 id="————白南准"><a href="#————白南准" class="headerlink" title="————白南准"></a>————白南准</h3>
@@ -239,8 +245,8 @@
 <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> __destruct ( <span class="keyword">void</span> )&#123;&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h1 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h1><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> constant = <span class="string">&#x27;常量值&#x27;</span>;   <span class="comment">//定义</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">showConstant</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">echo</span>  <span class="built_in">self</span>::constant . PHP_EOL;  <span class="comment">//使用</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Static-关键字"><a href="#Static-关键字" class="headerlink" title="Static 关键字"></a>Static 关键字</h1><p>　　声明类属性或方法为 static(静态)，就可以不实例化类而直接访问。<br>　　静态属性访问用’::’<br>　　定义静态属性：</p>
+<hr>
+<h1 id="Static-关键字"><a href="#Static-关键字" class="headerlink" title="Static 关键字"></a>Static 关键字</h1><p>　　声明类属性或方法为 static(静态)，就可以不实例化类而直接访问。<br>　　静态属性访问用‘::’<br>　　定义静态属性：</p>
 <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> </span>&#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="built_in">static</span> $my_static = <span class="string">&#x27;foo&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 <p>　　访问静态属性：</p>
 <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">//直接访问类属性</span></span><br><span class="line"><span class="keyword">print</span> Foo::$my_static . PHP_EOL;</span><br><span class="line"><span class="comment">//实例化后访问</span></span><br><span class="line">$foo = <span class="keyword">new</span> Foo();</span><br><span class="line"><span class="keyword">print</span> $foo::$my_static . PHP_EOL;</span><br></pre></td></tr></table></figure>
@@ -1534,7 +1540,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-GjmBlwVF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-aUzqEarn" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1628,7 +1634,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-GjmBlwVF"),
+            element: document.getElementById("aplayer-aUzqEarn"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
