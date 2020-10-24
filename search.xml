@@ -5,13 +5,19 @@
     <url>/posts/daily/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
-            <h3 id="事实上，"><a href="#事实上，" class="headerlink" title="事实上，"></a>事实上，</h3><h3 id="忧郁的人会成为最大的瘾君子，"><a href="#忧郁的人会成为最大的瘾君子，" class="headerlink" title="忧郁的人会成为最大的瘾君子，"></a>忧郁的人会成为最大的瘾君子，</h3><h3 id="因为真正上了瘾的体验总是一种孤独的体验。"><a href="#因为真正上了瘾的体验总是一种孤独的体验。" class="headerlink" title="因为真正上了瘾的体验总是一种孤独的体验。"></a>因为真正上了瘾的体验总是一种孤独的体验。</h3><h3 id="————苏珊·桑塔格"><a href="#————苏珊·桑塔格" class="headerlink" title="————苏珊·桑塔格"></a>————苏珊·桑塔格</h3>
+            <h3 id="醉后不知天在水，"><a href="#醉后不知天在水，" class="headerlink" title="醉后不知天在水，"></a>醉后不知天在水，</h3><h3 id="满船清梦压星河。"><a href="#满船清梦压星河。" class="headerlink" title="满船清梦压星河。"></a>满船清梦压星河。</h3><h3 id="————题龙阳县青草湖"><a href="#————题龙阳县青草湖" class="headerlink" title="————题龙阳县青草湖"></a>————题龙阳县青草湖</h3>
             <i class="fa fa-quote-right"></i>
           </blockquote>
-<p>2020.10.23 </p>
+<p>2020.10.24</p>
 <a id="more"></a>
 
 
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h3 id="事实上，"><a href="#事实上，" class="headerlink" title="事实上，"></a>事实上，</h3><h3 id="忧郁的人会成为最大的瘾君子，"><a href="#忧郁的人会成为最大的瘾君子，" class="headerlink" title="忧郁的人会成为最大的瘾君子，"></a>忧郁的人会成为最大的瘾君子，</h3><h3 id="因为真正上了瘾的体验总是一种孤独的体验。"><a href="#因为真正上了瘾的体验总是一种孤独的体验。" class="headerlink" title="因为真正上了瘾的体验总是一种孤独的体验。"></a>因为真正上了瘾的体验总是一种孤独的体验。</h3><h3 id="————苏珊·桑塔格"><a href="#————苏珊·桑塔格" class="headerlink" title="————苏珊·桑塔格"></a>————苏珊·桑塔格</h3>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>2020.10.23</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <h3 id="天下熙熙，"><a href="#天下熙熙，" class="headerlink" title="天下熙熙，"></a>天下熙熙，</h3><h3 id="皆为利来；"><a href="#皆为利来；" class="headerlink" title="皆为利来；"></a>皆为利来；</h3><h3 id="天下攘攘，"><a href="#天下攘攘，" class="headerlink" title="天下攘攘，"></a>天下攘攘，</h3><h3 id="皆为利往。"><a href="#皆为利往。" class="headerlink" title="皆为利往。"></a>皆为利往。</h3><h3 id="————史记·货殖列传"><a href="#————史记·货殖列传" class="headerlink" title="————史记·货殖列传"></a>————史记·货殖列传</h3>
@@ -1564,7 +1570,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-sQOysYUn" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-svBdbPyu" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1658,7 +1664,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-sQOysYUn"),
+            element: document.getElementById("aplayer-svBdbPyu"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
