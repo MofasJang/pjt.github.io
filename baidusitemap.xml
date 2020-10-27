@@ -2,11 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.panjiangtao.cn/posts/daily/</loc>
-    <lastmod>2020-10-26</lastmod>
+    <lastmod>2020-10-27</lastmod>
+  </url>
+  <url>
+    <loc>http://www.panjiangtao.cn/posts/chulian/</loc>
+    <lastmod>2020-10-27</lastmod>
+  </url>
+  <url>
+    <loc>http://www.panjiangtao.cn/posts/caozuoxitong/</loc>
+    <lastmod>2020-10-27</lastmod>
+  </url>
+  <url>
+    <loc>http://www.panjiangtao.cn/posts/jiwang/</loc>
+    <lastmod>2020-10-27</lastmod>
+  </url>
+  <url>
+    <loc>http://www.panjiangtao.cn/posts/jizu/</loc>
+    <lastmod>2020-10-27</lastmod>
+  </url>
+  <url>
+    <loc>http://www.panjiangtao.cn/posts/ruanti/</loc>
+    <lastmod>2020-10-27</lastmod>
+  </url>
+  <url>
+    <loc>http://www.panjiangtao.cn/posts/test/</loc>
+    <lastmod>2020-10-27</lastmod>
+  </url>
+  <url>
+    <loc>http://www.panjiangtao.cn/posts/bianyi/</loc>
+    <lastmod>2020-10-27</lastmod>
   </url>
   <url>
     <loc>http://www.panjiangtao.cn/posts/guanko/</loc>
-    <lastmod>2020-10-20</lastmod>
+    <lastmod>2020-10-27</lastmod>
   </url>
   <url>
     <loc>http://www.panjiangtao.cn/posts/php-7oop/</loc>
@@ -86,34 +114,6 @@
   </url>
   <url>
     <loc>http://www.panjiangtao.cn/posts/go-9array/</loc>
-    <lastmod>2020-09-24</lastmod>
-  </url>
-  <url>
-    <loc>http://www.panjiangtao.cn/posts/chulian/</loc>
-    <lastmod>2020-09-24</lastmod>
-  </url>
-  <url>
-    <loc>http://www.panjiangtao.cn/posts/jiwang/</loc>
-    <lastmod>2020-09-24</lastmod>
-  </url>
-  <url>
-    <loc>http://www.panjiangtao.cn/posts/bianyi/</loc>
-    <lastmod>2020-09-24</lastmod>
-  </url>
-  <url>
-    <loc>http://www.panjiangtao.cn/posts/caozuoxitong/</loc>
-    <lastmod>2020-09-24</lastmod>
-  </url>
-  <url>
-    <loc>http://www.panjiangtao.cn/posts/jizu/</loc>
-    <lastmod>2020-09-24</lastmod>
-  </url>
-  <url>
-    <loc>http://www.panjiangtao.cn/posts/ruanti/</loc>
-    <lastmod>2020-09-24</lastmod>
-  </url>
-  <url>
-    <loc>http://www.panjiangtao.cn/posts/test/</loc>
     <lastmod>2020-09-24</lastmod>
   </url>
   <url>
