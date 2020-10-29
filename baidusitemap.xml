@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.panjiangtao.cn/posts/daily/</loc>
+    <lastmod>2020-10-29</lastmod>
+  </url>
+  <url>
+    <loc>http://www.panjiangtao.cn/posts/caozuoxitong/</loc>
     <lastmod>2020-10-27</lastmod>
   </url>
   <url>
@@ -9,15 +13,11 @@
     <lastmod>2020-10-27</lastmod>
   </url>
   <url>
-    <loc>http://www.panjiangtao.cn/posts/caozuoxitong/</loc>
+    <loc>http://www.panjiangtao.cn/posts/jizu/</loc>
     <lastmod>2020-10-27</lastmod>
   </url>
   <url>
     <loc>http://www.panjiangtao.cn/posts/jiwang/</loc>
-    <lastmod>2020-10-27</lastmod>
-  </url>
-  <url>
-    <loc>http://www.panjiangtao.cn/posts/jizu/</loc>
     <lastmod>2020-10-27</lastmod>
   </url>
   <url>
