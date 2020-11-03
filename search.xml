@@ -5,13 +5,19 @@
     <url>/posts/daily/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
+            <h3 id="在没有危险的地方，"><a href="#在没有危险的地方，" class="headerlink" title="在没有危险的地方，"></a>在没有危险的地方，</h3><h3 id="那里爱情拥有双眼，"><a href="#那里爱情拥有双眼，" class="headerlink" title="那里爱情拥有双眼，"></a>那里爱情拥有双眼，</h3><h3 id="不会盲目。"><a href="#不会盲目。" class="headerlink" title="不会盲目。"></a>不会盲目。</h3><h2 id="———戴米恩·莱斯"><a href="#———戴米恩·莱斯" class="headerlink" title="———戴米恩·莱斯"></a>———戴米恩·莱斯</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>2020.11.3</p>
+<a id="more"></a>
+
+
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
             <h3 id="无论我们处在怎样的年纪，"><a href="#无论我们处在怎样的年纪，" class="headerlink" title="无论我们处在怎样的年纪，"></a>无论我们处在怎样的年纪，</h3><h3 id="只要能看到未来，"><a href="#只要能看到未来，" class="headerlink" title="只要能看到未来，"></a>只要能看到未来，</h3><h3 id="就能获得青春。"><a href="#就能获得青春。" class="headerlink" title="就能获得青春。"></a>就能获得青春。</h3><h2 id="————保罗·索伦蒂诺"><a href="#————保罗·索伦蒂诺" class="headerlink" title="————保罗·索伦蒂诺"></a>————保罗·索伦蒂诺</h2>
             <i class="fa fa-quote-right"></i>
           </blockquote>
 <p>2020.11.2</p>
-<a id="more"></a>
-
-
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <h3 id="她今夜出去只喝香槟，"><a href="#她今夜出去只喝香槟，" class="headerlink" title="她今夜出去只喝香槟，"></a>她今夜出去只喝香槟，</h3><h3 id="她几乎打量了所有男人，"><a href="#她几乎打量了所有男人，" class="headerlink" title="她几乎打量了所有男人，"></a>她几乎打量了所有男人，</h3><h3 id="她在玩她的游戏，"><a href="#她在玩她的游戏，" class="headerlink" title="她在玩她的游戏，"></a>她在玩她的游戏，</h3><h3 id="你可以听到他们说，"><a href="#你可以听到他们说，" class="headerlink" title="你可以听到他们说，"></a>你可以听到他们说，</h3><h3 id="她很漂亮，"><a href="#她很漂亮，" class="headerlink" title="她很漂亮，"></a>她很漂亮，</h3><h3 id="我们要为她的美貌付钱。"><a href="#我们要为她的美貌付钱。" class="headerlink" title="我们要为她的美貌付钱。"></a>我们要为她的美貌付钱。</h3><h2 id="————发电站"><a href="#————发电站" class="headerlink" title="————发电站"></a>————发电站</h2>
@@ -1630,7 +1636,7 @@
     <title>测试一下</title>
     <url>/posts/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2>
-        <div id="aplayer-FTMAUXFK" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-MzctMQWz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">[ti:Something Just Like This]
 [ar:The Chainsmokers/Coldplay]
 [al:Something Just Like This]
@@ -1724,7 +1730,7 @@
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-FTMAUXFK"),
+            element: document.getElementById("aplayer-MzctMQWz"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
@@ -1740,6 +1746,7 @@
           window.aplayers.push(ap);
         </script>
 
+<h2 id="b站外链"><a href="#b站外链" class="headerlink" title="b站外链"></a>b站外链</h2><p><a href="https://xbeibeix.com/api/bilibili/biliplayer/?url=">https://xbeibeix.com/api/bilibili/biliplayer/?url=</a></p>
 <h2 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h2><center><a class="btn" href="#" title="Title">
             <i class="fa fa-home fa-fw fa-lg"></i>按一下
           </a></center>
