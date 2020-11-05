@@ -5,9 +5,20 @@ body {
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size: cover;
-  background-position:50% 50%;
+  background-position:center;
+  z-index: -2;
 }
-
+.nexmoe-bg {
+  opacity: 0.9;
+  background-size: cover;
+  position: fixed;
+  filter: blur(30px);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .title {
   font-size: 60px;
   letter-spacing: 2px;
